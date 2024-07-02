@@ -1,26 +1,33 @@
-<section id="left">
-<h1>LOGIN</h1>
-<h2>
-    Please enter your credintials
-</h2>
-<form>
-    <label for="userName">Username: </label>
-    <input class="form-control" id="userName" type="text" formControlName="userName">
 
-    <label for="password">Password: </label>
-    <input class="form-control" id="password" type="password" formControlName="password">
+<div id="container">
+    <section class="container-fluid" id="left">
+        <div id="login">
+            <div id="title">
+                <h1>LOGIN</h1>
+                <p>
+                    Please enter your credintials
+                </p>
+            </div>
+            <form class="form-group">
+                <label for="userName">Username: </label>
+                <input class="mb-3 custom-input form-control" id="userName" type="text" formControlName="userName" placeholder="Enter your username">
 
-    <input type="checkbox" id="rememberMe">
-    <label for="rememberMe">Remember me</label>
+                <label for="password">Password: </label>
+                <input class="mb-3 custom-input form-control" id="password" type="password" formControlName="password" placeholder="********">
 
-    <a>Forgot password</a>
+                <input class="form-check-input" type="checkbox" id="rememberMe">
+                <small><label class="ms-2 form-check-label" for="rememberMe">Remember me</label>
 
-    <br>
-    
-    <button class="btn btn-primary" type="button">Sign in</button>
-</form>
-</section>
+                <a href="#" style="text-decoration: none; color: #030303;" class="ms-5">Forgot password</a></small>
 
-<section id="right">
+                <br><br>
+                
+                <button class="col-12 mx-auto custom-input btn btn-primary border-0" type="button">Sign in</button>
+            </form>
+        </div>
+    </section>
 
-</section>
+    <section class="container-fluid" id="right">
+        <img alt="TAHAKOM logo" src="assets/images/TahakomLogo.png">
+    </section>
+</div>

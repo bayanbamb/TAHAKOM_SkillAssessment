@@ -1,0 +1,49 @@
+#container{
+    display:flex;
+    height: 100vh;
+}
+
+#left{
+    width:50%;
+    background-color: #F8F8F8;
+}
+
+#right{
+    background: linear-gradient(180deg, #35142C 0%, #612550 25%, #497284 75%, #31BFB7 100%);
+    width:50%;
+}
+
+#login{
+    padding: 25% 0% 25% 0%;
+    font-family: 'Poppins';
+}
+
+form{
+    width: 50%;
+    margin: auto;
+    font-weight: bold;
+    font-size: smaller;
+}
+
+#title{
+    margin: auto;
+    text-align: center;
+}
+
+h1{
+    color: #030303;
+}
+
+p{
+    color: #636364
+}
+
+.custom-input{
+    border-radius: 12px;
+    box-shadow: 0px .3px .3px 0px #00000040;
+}
+
+.btn-primary {
+    background-color: #612550;
+    box-shadow: 0px 4px 10px 0px #E9444B40;
+}
