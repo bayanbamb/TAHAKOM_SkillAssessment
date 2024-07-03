@@ -1,4 +1,6 @@
 import { Component } from '@angular/core';
+import { FormGroup, FormControl } from "@angular/forms";
+import { Validators } from "@angular/forms";
 
 @Component({
   selector: 'login',
@@ -7,4 +9,24 @@ import { Component } from '@angular/core';
 })
 export class LoginComponent {
   imageUrl = 'assets/images/TahakomLogo.png';
+  title = 'Login';
+  submitted = false;
+  loginForm = new FormGroup({
+    username: new FormControl("", [
+      Validators.required,
+      Validators.minLength(10),
+      Validators.maxLength(10)
+    ]),
+    password: new FormControl("", [
+      Validators.required,
+      Validators.minLength(8)
+    ]),
+  });
+  onSubmit() {
+    this.submitted = true;
+    if (this.loginForm.valid) {
+      console.log(this.loginForm.value);
+      this.submitted = false;
+    }
+  }
 }
