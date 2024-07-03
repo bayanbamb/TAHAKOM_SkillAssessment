@@ -1,6 +1,8 @@
 import { Component } from '@angular/core';
 import { FormGroup, FormControl } from "@angular/forms";
 import { Validators } from "@angular/forms";
+import { Router } from '@angular/router';
+
 
 @Component({
   selector: 'login',
@@ -11,6 +13,7 @@ export class LoginComponent {
   imageUrl = 'assets/images/TahakomLogo.png';
   title = 'Login';
   submitted = false;
+  constructor(private router: Router) {}
   loginForm = new FormGroup({
     username: new FormControl("", [
       Validators.required,
@@ -27,6 +30,7 @@ export class LoginComponent {
     if (this.loginForm.valid) {
       console.log(this.loginForm.value);
       this.submitted = false;
+      this.router.navigate(['/home']);
     }
   }
 }

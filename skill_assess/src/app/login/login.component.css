@@ -67,3 +67,9 @@ width: 100%;
     font-size: 70%;
     margin: 2% 3% 2% 3%;
 }
+
+#forgotpassword{
+left: -10%;
+text-decoration: none;
+color: #030303;
+}

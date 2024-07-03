@@ -1,0 +1,15 @@
+body{
+    display:flex;
+    height: 100vh;
+    background: linear-gradient(180deg, #35142C 0%, #612550 25%, #497284 75%, #31BFB7 100%);
+}
+
+img{
+    width: 50%;
+    margin:auto;
+}
+
+.btn-primary {
+    background-color: #612550;
+    box-shadow: 0px 4px 10px 0px #E9444B40;
+}
