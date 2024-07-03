@@ -12,9 +12,13 @@
                 *ngIf="submitted && (loginForm.controls.username.invalid || loginForm.controls.password.invalid)"
                 >
                 <div
-                *ngIf="loginForm.controls.username.errors?.['required'] || loginForm.controls.username.errors?.['minlength'] || loginForm.controls.username.errors?.['maxlength']
+                *ngIf="loginForm.controls.username.errors?.['required']
                 || loginForm.controls.password.errors?.['required'] || loginForm.controls.password.errors?.['minlength']">
                     Please enter a correct national ID/password
+                </div>
+                <div
+                *ngIf="loginForm.controls.username.errors?.['minlength'] || loginForm.controls.username.errors?.['maxlength']">
+                    Username should be 10 numbers.
                 </div>
             </div> 
             <form class="form-group" [formGroup]="loginForm" (ngSubmit)="onSubmit()">

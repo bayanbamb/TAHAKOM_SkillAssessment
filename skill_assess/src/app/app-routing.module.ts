@@ -5,8 +5,8 @@ import { WelcomeComponent } from './welcome/welcome.component';
 import { HomeComponent } from './home/home.component';
 
 const routes: Routes = [
-  { path: '', component: WelcomeComponent },
-  { path: 'login', component: LoginComponent },
+  // { path: '', component: WelcomeComponent },
+  { path: '', component: LoginComponent },
   { path: 'home', component: HomeComponent },
 ];
 

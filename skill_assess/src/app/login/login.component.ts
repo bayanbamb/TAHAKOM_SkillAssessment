@@ -15,7 +15,7 @@ export class LoginComponent {
   submitted = false;
   constructor(private router: Router) {}
   loginForm = new FormGroup({
-    username: new FormControl("", [
+      username: new FormControl("", [
       Validators.required,
       Validators.minLength(10),
       Validators.maxLength(10)
