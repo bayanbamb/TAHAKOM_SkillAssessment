@@ -23,7 +23,7 @@
             </div> 
             <form class="form-group" [formGroup]="loginForm" (ngSubmit)="onSubmit()">
                 <label for="username">Username</label>
-                <input class="mb-3 custom-input form-control" id="username" type="text" formControlName="username" placeholder="Enter your username">
+                <input class="mb-3 custom-input form-control" id="username" type="text" formControlName="username" placeholder="Enter your username" [ngClass]="{'is-invalid': loginForm.controls.username.touched && loginForm.controls.username.invalid}">
 
                 <label for="password">Password</label>
                 <input class="mb-3 custom-input form-control" id="password" type="password" formControlName="password" placeholder="********">

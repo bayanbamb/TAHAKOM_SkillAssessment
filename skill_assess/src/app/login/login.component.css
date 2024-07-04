@@ -73,3 +73,7 @@ left: -10%;
 text-decoration: none;
 color: #030303;
 }
+
+.is-invalid {
+border-color: #dc3545;
+}
